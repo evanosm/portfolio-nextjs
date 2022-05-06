@@ -1,0 +1,47 @@
+.contact-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position : relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .links-grid{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        align-self: center ;
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        height: 60%;
+
+        .item {
+            width: 250px;
+            height: 75px;
+            background: none;
+            color: white;
+            border: white 5px solid;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(20px) brightness(0.8);
+
+            &:nth-last-child(2){
+                grid-area: 2 / 1 / 3 / 3;
+            }
+
+            &:nth-last-child(1){
+                grid-area: 2 / 2 / 3 / 4;
+            }
+        }
+
+        
+    }
+}

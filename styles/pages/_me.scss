@@ -1,0 +1,102 @@
+.me-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position : relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .show-modal {
+        width: 100px;
+        height: 100px;
+        background: none;
+        color: white;
+        border : 5px solid white;
+        border-radius: 50%;
+        font-size: 1em;
+        font-weight: 100;
+        z-index: 3;
+    }
+
+    .round-effect{
+        position: absolute;
+        mix-blend-mode: overlay;
+        top: calc(50% - 150px);
+        left: calc(50% - 150px);
+        width: 300px;
+        height: 300px;
+        background: white;
+        border-radius: 50%;
+    }
+
+    .modal-backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .modal {
+            position: relative;
+            width: 60vw;
+            height: 60vh;
+            backdrop-filter: blur(10px) brightness(0.5);
+            border : 5px solid white;
+            border-radius: 50px;
+            z-index: 11;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .modal-title {
+                position: absolute;
+                top: 0;
+                font-size: 2em;
+                font-weight: 700;
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+                color: white;
+            }
+
+            .modal-desc {
+                font-size: 1.2em;
+                text-align: center;
+                width: 80%;
+                color: white;
+
+                span {
+                    color: #ff00CC;
+                }
+
+            }
+
+            .modal-links {
+                position: absolute;
+                bottom: 20px;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                user-select: nones;
+                
+                a {
+                    color: $dark-blue;
+                    border: #ff00CC solid 2px;
+                    padding: 5px;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    font-size: 1.2em;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+
+}

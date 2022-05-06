@@ -1,0 +1,23 @@
+$font : 'Ubuntu', sans-serif;
+//colors
+$blue: #0029FA;
+$dark-blue:#230A59;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: $font;
+    background-color: $blue;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

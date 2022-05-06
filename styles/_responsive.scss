@@ -1,0 +1,124 @@
+@media screen and (max-width: 820px) {
+    #__next > div > div:nth-child(1) > div > div.background-text {
+        h1 {
+            font-size: 7vw;
+            margin-right: 3em;
+        }
+
+        h2 {
+            font-size: 5vw;
+            margin-left: 3em;
+        }
+    }
+
+    #__next > div > div:nth-child(1) > div > div.modal-backdrop {
+
+        height: 100vh;
+        position: absolute;
+        top: 0;
+
+        div {
+            
+        height: 400px;
+        width: 90vw;
+
+        h1 {
+            font-size: 6vw;
+        }
+
+        p {
+            line-height: 2em;
+            font-size: 1em;
+        }}
+    }
+
+    .projects-wrapper {
+        height: 70vh;
+        width: 100vw;
+        display: grid;
+        position: absolute;
+        top: calc(50% - 35vh);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    
+        .card {
+            width: 40vw;
+            height: 80%;
+            border-radius: 20px;
+            align-self: center;
+            justify-self: center;
+            
+            .content {
+                .title {
+                    width: 100%;
+                    font-size: 5vw;
+                    font-weight: 700;
+                    color: black;
+                }
+        
+                .description {
+                    font-size: 2vw;
+                    font-weight: 100;
+                    color: black;
+                    width: 80%;
+                    text-align: center;
+                    margin: auto;
+                    margin-top: 1em;            
+                }
+
+                button {
+                    position: absolute;
+                    bottom: .5em;
+                    left: calc(50% - 50px);
+                    width: 100px;
+                    height: 20px;
+                    font-size: .5em;
+                    border-radius: 50px;
+                    border : 1px solid black;
+                    background-color: white;
+                }
+
+                .instructions {
+                    color : #848484;
+                    width: 100%;
+                    font-size: 3vw;
+                    font-weight: 100;
+                    position: absolute;
+                    bottom: 1em;
+                    text-align: center;
+                }
+                
+            }
+        } 
+    }
+
+.contact-wrapper    {
+    .links-grid {
+        position: relative;
+        align-self: center ;
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background: none;
+            color: white;
+            border: white 5px solid;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(20px) brightness(0.8);
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+}
